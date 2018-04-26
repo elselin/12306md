@@ -1,0 +1,112 @@
+<template>
+  <div>
+      <v-list>
+        <v-list-tile>
+          <v-list-tile-action>
+            <v-icon>account_circle</v-icon>
+          </v-list-tile-action>
+          <v-list-tile-title>
+            Login
+          </v-list-tile-title>
+        </v-list-tile>
+        <v-list-tile>
+          <v-list-tile-action>
+            <v-icon>phonelink_lock</v-icon>
+          </v-list-tile-action>
+          <v-list-tile-title>
+            Mobile Verification
+          </v-list-tile-title>
+        </v-list-tile>
+        <v-list-tile>
+          <v-list-tile-action>
+            <v-icon>verified_user</v-icon>
+          </v-list-tile-action>
+          <v-list-tile-title>
+            My Insurance
+          </v-list-tile-title>
+        </v-list-tile>
+        <v-list-tile>
+          <v-list-tile-action>
+            <v-icon>restaurant</v-icon>
+          </v-list-tile-action>
+          <v-list-tile-title>
+            Meals & Products
+          </v-list-tile-title>
+        </v-list-tile>
+      </v-list>
+      <v-divider></v-divider>
+      <v-list>
+        <v-list-tile>
+           <v-list-tile-action>
+            <v-icon>flash_on</v-icon>
+          </v-list-tile-action>
+          <v-list-tile-title>
+            Rail Express
+          </v-list-tile-title>
+        </v-list-tile>
+      </v-list>
+     <v-divider></v-divider>
+           <v-list>
+        <v-list-tile>
+          <v-list-tile-action>
+            <v-icon>map</v-icon>
+          </v-list-tile-action>
+          <v-list-tile-title>
+            Tour Guide
+          </v-list-tile-title>
+        </v-list-tile>
+        <v-list-tile>
+          <v-list-tile-action>
+            <v-icon>room_service</v-icon>
+          </v-list-tile-action>
+          <v-list-tile-title>
+            Services
+          </v-list-tile-title>
+        </v-list-tile>
+        <v-list-tile>
+          <v-list-tile-action>
+            <v-icon>message</v-icon>
+          </v-list-tile-action>
+          <v-list-tile-title>
+            Informations
+          </v-list-tile-title>
+        </v-list-tile>
+        <v-list-tile>
+          <v-list-tile-action>
+            <v-icon>insert_emoticon</v-icon>
+          </v-list-tile-action>
+          <v-list-tile-title>
+            Tour & Pleasure
+          </v-list-tile-title>
+        </v-list-tile>
+        <v-list-tile>
+          <v-list-tile-action>
+            <v-icon>system_update_alt</v-icon>
+          </v-list-tile-action>
+          <v-list-tile-title>
+            Data Upgrade
+          </v-list-tile-title>
+        </v-list-tile>
+        <v-list-tile>
+          <v-list-tile-action>
+            <v-icon>notifications</v-icon>
+          </v-list-tile-action>
+          <v-list-tile-title>
+            Notifications
+          </v-list-tile-title>
+        </v-list-tile>
+        <v-list-tile>
+          <v-list-tile-action>
+            <v-icon>more_horiz</v-icon>
+          </v-list-tile-action>
+          <v-list-tile-title>
+            About
+          </v-list-tile-title>
+        </v-list-tile>
+      </v-list>
+  </div>
+</template>
+<script>
+  export default {
+  }
+</script>
