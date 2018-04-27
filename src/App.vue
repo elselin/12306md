@@ -222,4 +222,7 @@ export default {
   margin-bottom:56px;
   background-color: #FF867F;
 }
+body::-webkit-scrollbar{
+  display: none
+}
 </style>
