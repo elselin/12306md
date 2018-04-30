@@ -89,7 +89,7 @@
               <v-list class="seats-list">
                 <v-list-tile>
                   <v-list-tile-avatar>
-                    <v-icon>event_seat</v-icon>
+                    <v-icon>airline_seat_recline_normal</v-icon>
                   </v-list-tile-avatar>
                   <v-list-tile-content>
                     <v-list-tile-title>
@@ -102,8 +102,8 @@
                 </v-list-tile>
                 <v-divider inset></v-divider>
                 <v-list-tile>
-                  <v-list-tile-avatar>
-                    <v-icon>event_seat</v-icon>
+                  <v-list-tile-avatar class="prime">
+                    <v-icon>airline_seat_flat</v-icon>
                   </v-list-tile-avatar>
                   <v-list-tile-content>
                     <v-list-tile-title>
@@ -122,7 +122,7 @@
            </v-flex>
         </v-layout>
     </v-container>
-    <v-btn block large fixed bottom color="primary" class="call-to-action-btn">Confirm Booking( ￥200 )</v-btn>
+    <v-btn block large fixed bottom color="primary" class="call-to-action-btn">Confirm Booking ( ￥200 )</v-btn>
   </div>
 </template>
 
@@ -248,6 +248,9 @@
 }
 .seats-list .avatar{
   background-color: #ddd;
+}
+.seats-list .prime .avatar{
+  background-color: #FFC107;
 }
 .call-to-action-btn{
   bottom: -6px !important;
