@@ -57,26 +57,26 @@
             <v-card>
               <v-card-actions>
                     <v-radio-group v-model="seatLevel" hide-details class="price-selection">
-                      <v-layout text-xs-center>
+                      <v-layout text-xs-left>
                         <v-flex xs-3>
-                          <v-radio value="radio-1" ></v-radio>
-                          <div class="price-level">
-                            <div class="grey--text">Prime</div>
-                            {{seats.prime.price}}
+                          <v-radio value="prime" color="primary" ></v-radio>
+                          <div class="price-level" @click="seatLevel='prime'">
+                            <div class="caption grey--text">Prime</div>
+                            ￥{{seats.prime.price}}
                           </div>
                         </v-flex>
                         <v-flex xs-3>
-                          <v-radio value="radio-1" ></v-radio>
-                          <div class="price-level">
-                            <div class="grey--text">Prime</div>
-                            {{seats.prime.price}}
+                          <v-radio value="medium" color="primary"></v-radio>
+                          <div class="price-level" @click="seatLevel='medium'">
+                            <div class="caption grey--text">Medium</div>
+                            ￥{{seats.medium.price}}
                           </div>
                         </v-flex>
                         <v-flex xs-3>
-                          <v-radio value="radio-1" ></v-radio>
-                          <div class="price-level">
-                            <div class="grey--text">Prime</div>
-                            {{seats.prime.price}}
+                          <v-radio value="normal" color="primary"></v-radio>
+                          <div class="price-level" @click="seatLevel='normal'">
+                            <div class="caption grey--text">Normal</div>
+                            ￥{{seats.normal.price}}
                           </div>
                         </v-flex>
                       </v-layout>
@@ -84,8 +84,45 @@
               </v-card-actions>
             </v-card>
           </v-flex>
+          <v-flex>
+            <v-card>
+              <v-list class="seats-list">
+                <v-list-tile>
+                  <v-list-tile-avatar>
+                    <v-icon>event_seat</v-icon>
+                  </v-list-tile-avatar>
+                  <v-list-tile-content>
+                    <v-list-tile-title>
+                      Else Lin
+                    </v-list-tile-title>
+                  </v-list-tile-content>
+                  <v-list-tile-action>
+                    <v-icon>delete</v-icon>
+                  </v-list-tile-action>
+                </v-list-tile>
+                <v-divider inset></v-divider>
+                <v-list-tile>
+                  <v-list-tile-avatar>
+                    <v-icon>event_seat</v-icon>
+                  </v-list-tile-avatar>
+                  <v-list-tile-content>
+                    <v-list-tile-title>
+                      Taylor Swift
+                    </v-list-tile-title>
+                  </v-list-tile-content>
+                  <v-list-tile-action>
+                    <v-icon>delete</v-icon>
+                  </v-list-tile-action>
+                </v-list-tile>
+              </v-list>
+              <v-divider></v-divider>
+              <v-btn flat color="primary">Add Seats</v-btn>
+              <v-btn flat color="primary" style="float:right">Pick Seats</v-btn>
+            </v-card>
+           </v-flex>
         </v-layout>
     </v-container>
+    <v-btn block large fixed bottom color="primary" class="call-to-action-btn">Confirm Booking( ￥200 )</v-btn>
   </div>
 </template>
 
@@ -175,6 +212,7 @@
   background-color: #000;
 }
 .details-info{
+  font-size: 13px;
   margin: 0 24px;
   padding: 8px 8px;
   border: 1px dashed #000;
@@ -185,13 +223,33 @@
   display: inline-block;
 }
 .price-selection{
-  padding:8px 16px;
+  padding:8px 0 0 8px;
+}
+.price-selection .flex:after{
+  content: '';
+  display: inline-block;
+  position: relative;
+  height: 80%;
+  width: 1px;
+  top:0px;
+  right: -20px;
+  background-color: #ddd;
+}
+.price-selection .flex:last-child:after{
+  display: none
 }
 .price-selection .radio{
   display: inline-block;
-  width: 32px
+  width: 32px;
+  transform: scale(0.8,0.8) !important;
 }
 .price-level{
   display: inline-block;
+}
+.seats-list .avatar{
+  background-color: #ddd;
+}
+.call-to-action-btn{
+  bottom: -6px !important;
 }
 </style>
